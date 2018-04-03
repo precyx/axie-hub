@@ -1,3 +1,31 @@
-<p>
-  axie-auction-observer works!
-</p>
+
+
+<div class="axie_auction_observer">
+
+  <div class="columns gap_big">
+    <div class="column c50">
+      <h1>Axie Contract Events <p class="count">({{allEvents.length}})</p></h1>
+      <div class="allevents row">
+        <div *ngFor="let event of allEvents; let i = index" class="event">
+          <div class="data">
+            <div class="elem index">
+              <p>#{{i+1}}</p>
+            </div>
+            <div class="elem event">
+              <p *ngIf="event.event">{{event.event}}</p>
+            </div>
+            <a href="https://etherscan.io/tx/{{event.transactionHash}}" target="_blank" class="elem link transactionHash" >
+              <p *ngIf="event.transactionHash">{{event.transactionHash}}</p>
+            </a>
+            <div class="elem mytime">
+              <p *ngIf="event.mytime">
+                {{event.mytime}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

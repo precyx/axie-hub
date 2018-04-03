@@ -1,0 +1,13 @@
+
+h1 {white-space: pre; display: flex;}
+h1 .count {font-size: 18px; color: #ababab;}
+
+.axie_auction_observer
+
+.columns {font-size: 12px; font-family: monospace; color: grey;}
+.columns .row {margin-bottom: 5px;}
+.columns .data {display: flex;}
+.columns .data .elem {margin-right: 50px;}
+.columns .data .elem.event { width: 200px; overflow: hidden; text-overflow: ellipsis;}
+.columns .data .elem.transactionHash { width: 400px; overflow: hidden; text-overflow: ellipsis;}
+.columns .data .elem.link {color: #3a96da; text-decoration: underline;}
